@@ -47,7 +47,7 @@ public class JoystickController extends Thread {
             while (eq.getNextEvent(event)) {
 
                 component = event.getComponent();
-                List identifierName = component.getIdentifier().getName();
+                List identifierName = component.getIdentifier().getName(); // I have a doubt in defining it
                 value = event.getValue();
 
                 // clear temporarily stored position if analog stick is in neutral position
